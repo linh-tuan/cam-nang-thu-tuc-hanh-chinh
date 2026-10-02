@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cẩm nang thủ tục hành chính</title>
+
+  <style>
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    body{
+      font-family:Arial, Helvetica, sans-serif;
+      background:#f4f7fb;
+      color:#222;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(135deg,#0b4f8a,#2485c7);
+      color:white;
+      text-align:center;
+      padding:60px 20px;
+    }
+
+    header h1{
+      font-size:40px;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:20px;
+    }
+
+    .student{
+      margin-top:20px;
+      display:inline-block;
+      background:rgba(255,255,255,0.15);
+      padding:12px 20px;
+      border-radius:10px;
+    }
+
+    nav{
+      background:white;
+      padding:15px;
+      text-align:center;
+      box-shadow:0 2px 8px rgba(0,0,0,0.1);
+      position:sticky;
+      top:0;
+    }
+
+    nav a{
+      color:#0b4f8a;
+      text-decoration:none;
+      font-weight:bold;
+      margin:0 15px;
+    }
+
+    main{
+      max-width:1100px;
+      margin:30px auto;
+      padding:0 20px;
+    }
+
+    section{
+      margin-bottom:30px;
+    }
+
+    h2{
+      color:#0b4f8a;
+      margin-bottom:15px;
+    }
+
+    .card{
+      background:white;
+      padding:22px;
+      border-radius:14px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.08);
+      margin-bottom:20px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+    }
+
+    .grid h3{
+      color:#176cad;
+      margin-bottom:10px;
+    }
+
+    .search{
+      width:100%;
+      padding:14px;
+      border:1px solid #ccc;
+      border-radius:8px;
+      font-size:16px;
+    }
+
+    #result{
+      margin-top:15px;
+      font-weight:bold;
+      color:#0b4f8a;
+    }
+
+    footer{
+      background:#0b4f8a;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    @media(max-width:800px){
+      .grid{
+        grid-template-columns:1fr;
+      }
+
+      header h1{
+        font-size:30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>CẨM NANG THỦ TỤC HÀNH CHÍNH</h1>
+  <p>Tra cứu nhanh - dễ hiểu - thuận tiện</p>
+
+  <div class="student">
+    <b>Sinh viên:</b> Nguyễn Thị Dung<br>
+    <b>MSSV:</b> 254748020190023
+  </div>
+</header>
+
+<nav>
+  <a href="#gioithieu">Giới thiệu</a>
+  <a href="#thutuc">Thủ tục</a>
+  <a href="#quytrinh">Quy trình</a>
+  <a href="#lienhe">Thông tin</a>
+</nav>
+
+<main>
+
+<section id="gioithieu" class="card">
+  <h2>Giới thiệu</h2>
+  <p>
+    Website Cẩm nang thủ tục hành chính được xây dựng nhằm hỗ trợ
+    người dân tra cứu các thủ tục hành chính phổ biến một cách
+    nhanh chóng, trực quan và dễ sử dụng.
+  </p>
+</section>
+
+<section id="thutuc">
+  <h2>Thủ tục hành chính phổ biến</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Đăng ký khai sinh</h3>
+      <p><b>Hồ sơ:</b> Tờ khai đăng ký khai sinh, giấy chứng sinh và các giấy tờ liên quan.</p>
+    </div>
+
+    <div class="card">
+      <h3>Đăng ký kết hôn</h3>
+      <p><b>Hồ sơ:</b> Tờ khai đăng ký kết hôn, giấy tờ tùy thân và các giấy tờ cần thiết.</p>
+    </div>
+
+    <div class="card">
+      <h3>Chứng thực bản sao</h3>
+      <p><b>Hồ sơ:</b> Bản chính giấy tờ và bản sao cần chứng thực.</p>
+    </div>
+
+    <div class="card">
+      <h3>Đăng ký cư trú</h3>
+      <p><b>Hồ sơ:</b> Tờ khai thay đổi thông tin cư trú và giấy tờ liên quan.</p>
+    </div>
+
+    <div class="card">
+      <h3>Đăng ký hộ kinh doanh</h3>
+      <p><b>Hồ sơ:</b> Giấy đề nghị đăng ký hộ kinh doanh và giấy tờ liên quan.</p>
+    </div>
+
+    <div class="card">
+      <h3>Xác nhận tình trạng hôn nhân</h3>
+      <p><b>Hồ sơ:</b> Tờ khai và các giấy tờ chứng minh theo quy định.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="quytrinh" class="card">
+  <h2>Quy trình thực hiện</h2>
+
+  <ol style="padding-left:25px;">
+    <li>Xác định thủ tục cần thực hiện.</li>
+    <li>Chuẩn bị hồ sơ.</li>
+    <li>Nộp hồ sơ trực tiếp hoặc trực tuyến.</li>
+    <li>Theo dõi quá trình xử lý.</li>
+    <li>Nhận kết quả.</li>
+  </ol>
+</section>
+
+<section class="card">
+  <h2>Tra cứu nhanh</h2>
+
+  <input
+    class="search"
+    id="searchBox"
+    type="text"
+    placeholder="Nhập tên thủ tục..."
+    onkeyup="timKiem()"
+  >
+
+  <div id="result"></div>
+</section>
+
+<section id="lienhe" class="card">
+  <h2>Thông tin đồ án</h2>
+
+  <p><b>Tên đồ án:</b> Cẩm nang thủ tục hành chính</p>
+  <p><b>Sinh viên:</b> Nguyễn Thị Dung</p>
+  <p><b>Mã số sinh viên:</b> 254748020190023</p>
+</section>
+
+</main>
+
+<footer>
+  © 2026 - Đồ án Cẩm nang thủ tục hành chính
+</footer>
+
+<script>
+  const danhSach = [
+    "Đăng ký khai sinh",
+    "Đăng ký kết hôn",
+    "Chứng thực bản sao",
+    "Đăng ký cư trú",
+    "Đăng ký hộ kinh doanh",
+    "Xác nhận tình trạng hôn nhân"
+  ];
+
+  function timKiem(){
+    const tuKhoa =
+      document.getElementById("searchBox")
+      .value
+      .toLowerCase()
+      .trim();
+
+    const ketQua =
+      danhSach.filter(x =>
+        x.toLowerCase().includes(tuKhoa)
+      );
+
+    if(tuKhoa === ""){
+      document.getElementById("result").innerHTML = "";
+      return;
+    }
+
+    if(ketQua.length > 0){
+      document.getElementById("result").innerHTML =
+        "Kết quả: " + ketQua.join(" | ");
+    }else{
+      document.getElementById("result").innerHTML =
+        "Không tìm thấy thủ tục phù hợp.";
+    }
+  }
+</script>
+
+</body>
+</html>
